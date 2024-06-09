@@ -1,0 +1,12 @@
+<!-- templates/video_list.html -->
+{% extends "base.html" %}
+{% block content %}
+<h2>Videos</h2>
+<ul>
+          {% for video in videos %}
+          <li>
+                    <a href="{% url 'video-stream' video.pk %}">{{ video.name }}</a>
+          </li>
+          {% endfor %}
+</ul>
+{% endblock %}
