@@ -17,8 +17,10 @@ This project is a video streaming application built with Django and Django REST 
    ```bash
    git clone https://github.com/yourusername/videostreaming.git
    cd videostreaming
+   ```bash
 python -m venv env
 source env/bin/activate  # On Windows use `env\Scripts\activate`
+```bash
 pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
